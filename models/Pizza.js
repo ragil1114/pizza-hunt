@@ -16,6 +16,7 @@ const PizzaSchema = new Schema({
       default: 'Large'
     },
     toppings: [],
+    // Comments array Field needed for Virtual
     comments: [
       {
         type: Schema.Types.ObjectId,
