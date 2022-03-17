@@ -23,7 +23,16 @@ const PizzaSchema = new Schema({
         ref: 'Comment'
       }
     ]
-});
+  },
+  // tells Pizza Model (Schema) to use Virtuals
+  {
+    toJSON: {
+      virtuals: true,
+    },
+    // prevents virtuals from creating duplicate of _id as `id`
+    id: false
+  }
+);
 
 // Virtual to get total count of comments and replies on retrieval
 PizzaSchema.virtual('commentCount').get(function() {
