@@ -10,6 +10,7 @@ const pizzaController = {
         path: 'comments',
         select: '-__v'
       })
+      // tells Mongoose not to return __v data
       .select('-__v')
       .then(dbPizzaData => res.json(dbPizzaData))
       .catch(err => {
