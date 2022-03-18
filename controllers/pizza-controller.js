@@ -10,7 +10,7 @@ const pizzaController = {
         path: 'comments',
         select: '-__v'
       })
-      // tells Mongoose not to return __v data
+      // Method tells Mongoose not to return __v data
       .select('-__v')
       // Method to sort pizzas in DESC order by the _id value (newest to old).
       .sort({ _id: -1 })
