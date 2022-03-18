@@ -12,6 +12,8 @@ const pizzaController = {
       })
       // tells Mongoose not to return __v data
       .select('-__v')
+      // Method to sort pizzas in DESC order by the _id value.
+      .sort({ _id: -1 })
       .then(dbPizzaData => res.json(dbPizzaData))
       .catch(err => {
         console.log(err);
