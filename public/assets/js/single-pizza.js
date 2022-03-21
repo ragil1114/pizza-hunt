@@ -98,7 +98,7 @@ function printReply(reply) {
 `;
 }
 
-// Create a Comment
+// Add a Comment
 function handleNewCommentSubmit(event) {
   event.preventDefault();
 
@@ -134,6 +134,7 @@ function handleNewCommentSubmit(event) {
     });
 }
 
+// Add a Reply to a comment
 function handleNewReplySubmit(event) {
   event.preventDefault();
 
