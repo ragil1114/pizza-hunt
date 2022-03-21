@@ -98,6 +98,7 @@ function printReply(reply) {
 `;
 }
 
+// Create a Comment
 function handleNewCommentSubmit(event) {
   event.preventDefault();
 
