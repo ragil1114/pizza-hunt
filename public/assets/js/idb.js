@@ -28,7 +28,7 @@ request.onerror = function(event) {
     console.log(event.target.errorCode);
 };
 
-// This function will be executed if we attempt to submit a new pizza and there's no internet connection
+// This function will be executed if we attempt to submit a new pizza and there's no internet connection.
 function saveRecord(record) {
     // open a new Transaction with the db w/ read and write permissions 
     const transaction = db.transaction(['new_pizza'], 'readwrite');
