@@ -9,7 +9,9 @@ const PizzaSchema = new Schema({
     },
     createdBy: {
       type: String,
+      // data Validation
       required: true,
+      // Validation
       trim: true
     },
     createdAt: {
@@ -21,6 +23,7 @@ const PizzaSchema = new Schema({
     size: {
       type: String,
       required: true,
+      // Validation
       enum: ['Personal', 'Small', 'Medium', 'Large', 'Extra Large'],
       default: 'Large'
     },
